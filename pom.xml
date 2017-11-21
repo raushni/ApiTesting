@@ -60,13 +60,7 @@
 			<scope>compile</scope>
 		</dependency>
 		
-		<dependency>
-			<groupId>atu.testng.reports.ATUReports</groupId>
-			<artifactId>atu-reports</artifactId>
-			<version>5.5_BETA</version>
-			<scope>system</scope>
-			<systemPath>D:/E/luna/rest/lib/ATUReporter_Selenium_testNG_5.5_BETA.jar</systemPath>
-		</dependency>
+		
 	</dependencies>
 	
 	<build>
