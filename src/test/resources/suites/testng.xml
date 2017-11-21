@@ -7,9 +7,5 @@
 		</classes>
 	</test> <!-- Test -->
 
- <listeners>
-		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
-		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
-		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
-	</listeners>
+ 
 </suite> <!-- Suite -->
