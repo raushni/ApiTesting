@@ -14,20 +14,20 @@ import atu.testng.reports.utils.Utils;
 public class SetUp {
 
 	protected Response response;
-	protected String url="http://10.51.236.53:8888";
+	protected String url="http://10.51.236.53:9001";
 	protected RequestSpecification httpRequest = RestAssured.given();
 
 	{	
 		System.setProperty("atu.reporter.config", "D:\\E\\luna\\rest\\src\\test\\resources\\atu.properties");
 	}
 
-	@BeforeTest
-	public void setProxy() 
-	{
-		System.setProperty("http.proxyHost", "goaproxy.persistent.co.in");
-		System.setProperty("http.proxyPort", "8080");
-		SetUp.atuSetup();
-	}
+// 	@BeforeTest
+// 	public void setProxy() 
+// 	{
+// 		System.setProperty("http.proxyHost", "goaproxy.persistent.co.in");
+// 		System.setProperty("http.proxyPort", "8080");
+// 		SetUp.atuSetup();
+// 	}
 
 	public Response getResponse() {
 		return response;
