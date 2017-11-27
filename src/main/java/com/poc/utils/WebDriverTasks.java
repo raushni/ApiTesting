@@ -26,12 +26,8 @@ import org.jsoup.nodes.Document;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-
-import com.relevantcodes.extentreports.LogStatus;
 
 //This class provides methods with logging for different object actions like click,send text etc
 public class WebDriverTasks {
