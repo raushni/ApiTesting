@@ -1,2 +1,7 @@
-/.settings/ /target/ /allure-report/ /allure-results/ /.allure/
 /target/
+/.allure/
+/allure-results/
+/allure-report/
+/.settings/
+*.project
+*.classpath
