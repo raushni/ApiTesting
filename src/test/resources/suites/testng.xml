@@ -9,6 +9,7 @@
        			]]></script>
      		</method-selector>
    		</method-selectors>
+   		<parameter name="browser" value="firefox"/>
 		<classes>
 			<class name="com.poc.api.test.TopicApiTests" />
 			<class name="com.poc.ui.test.AngularAppTests" />

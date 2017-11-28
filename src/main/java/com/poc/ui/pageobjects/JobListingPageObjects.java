@@ -15,22 +15,22 @@ public class JobListingPageObjects {
 	public static String rowusername_locator = "//input[@ng-reflect-name='name'][@placeholder='Full Name']";
 	
 	
-	public static  WebElement getEditLink() {
+	public static synchronized  WebElement getEditLink() {
         
         return WebDriverTasks.getWebdriverSession().findElement(By.xpath(editlink_locator));
     }
 
-	public static  WebElement getTableUserIDTextBox() {
+	public static synchronized  WebElement getTableUserIDTextBox() {
     
 		return WebDriverTasks.getWebdriverSession().findElement(By.xpath(tableuserid_locator));
 	}
 
-	public static  WebElement getRecordUserNameTextBox() {
+	public static synchronized  WebElement getRecordUserNameTextBox() {
     
 		return WebDriverTasks.getWebdriverSession().findElement(By.xpath(rowusername_locator));
 	}
 
-	public static  WebElement getUpdateLink() {
+	public static synchronized  WebElement getUpdateLink() {
     
 		return WebDriverTasks.getWebdriverSession().findElement(By.xpath(updatelink_locator));
 	}

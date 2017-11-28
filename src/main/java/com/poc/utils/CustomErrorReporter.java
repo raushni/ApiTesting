@@ -16,6 +16,8 @@ public class CustomErrorReporter implements IHookable {
         if ((testresult.getThrowable() != null) && WebDriverTasks.VerifyWebdriverSession()) {
             try {
                 takeScreenShot();
+                WebDriverTasks.tearDown();
+    			
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -25,6 +27,11 @@ public class CustomErrorReporter implements IHookable {
 	
 	@Attachment(value = "Test failure Screenshot", type = "image/png")
     private byte[] takeScreenShot(){
+    	return ((TakesScreenshot)WebDriverTasks.getWebdriverSession()).getScreenshotAs(OutputType.BYTES);
+    }
+	
+	@Attachment(value = "Test Step Screenshot", type = "image/png")
+    private byte[] takeStepScreenShot(){
     	return ((TakesScreenshot)WebDriverTasks.getWebdriverSession()).getScreenshotAs(OutputType.BYTES);
     }
 

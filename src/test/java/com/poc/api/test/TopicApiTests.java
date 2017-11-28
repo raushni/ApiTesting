@@ -13,8 +13,10 @@ import io.restassured.response.Response;
 import org.json.JSONException;
 import org.json.simple.parser.ParseException;
 import org.testng.annotations.Test;
+
 import com.poc.api.metadata.TopicApiTasks;
 import com.poc.api.metadata.beans.TopicApiBeans;
+import com.poc.utils.BaseTest;
 
 
 
@@ -23,7 +25,7 @@ import com.poc.api.metadata.beans.TopicApiBeans;
 @Epic("POC Regression Test")
 @Feature("Backend Springboot app")
 
-public class TopicApiTests {
+public class TopicApiTests extends BaseTest {
 	
 	@Test(groups = {"bvt","resgression"} , description="Validate Create Topic Api")
 	@Story("POC Backend api tests")
